@@ -1,0 +1,24 @@
+.wrapper,
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  padding: 0;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.line {
+  padding: 2px 0;
+}
