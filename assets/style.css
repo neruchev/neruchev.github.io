@@ -13,12 +13,17 @@ body {
   align-items: center;
 }
 
-a {
-  padding: 0;
-  text-decoration: none;
-  margin: 0 2px;
+.line {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
 }
 
-.line {
-  padding: 2px 0;
+a {
+  display: flex;
+  padding: 0;
+  text-decoration: none;
+  margin: 4px;
+  width: 48px;
+  height: 48px;
 }
