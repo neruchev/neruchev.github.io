@@ -19,13 +19,23 @@ body {
   height: 56px;
 }
 
-a {
+.line a {
   display: flex;
   padding: 0;
   text-decoration: none;
   margin: 4px;
   width: 48px;
   height: 48px;
+  background-color: black;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.line a svg {
+  fill: white;
+  width: 28px;
+  height: 28px;
 }
 
 .candle {
