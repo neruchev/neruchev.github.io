@@ -1,50 +1,71 @@
-.wrapper,
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #000000;
+    --secondary: #ffffff;
+  }
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
+  background-color: var(--primary);
 }
 
-.wrapper {
-  flex: 1;
+body {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  flex: 1;
   justify-content: center;
+}
+
+.icons {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: space-between;
+  max-width: 150px;
+}
+
+.icons a {
   align-items: center;
-}
-
-.line {
+  background-color: var(--secondary);
+  border-radius: 6px;
   display: flex;
-  flex-direction: row;
-  height: 56px;
-}
-
-.line a {
-  display: flex;
+  height: 48px;
+  justify-content: center;
   padding: 0;
   text-decoration: none;
-  margin: 4px;
   width: 48px;
-  height: 48px;
-  background-color: black;
-  border-radius: 8px;
-  align-items: center;
-  justify-content: center;
 }
 
-.line a svg {
-  fill: white;
-  width: 28px;
+.icons a svg {
+  fill: var(--primary);
   height: 28px;
+  transition: width 200ms ease-out, height 200ms ease-out;
+  width: 28px;
+}
+
+.icons a:hover svg,
+.icons a:focus svg {
+  height: 32px;
+  width: 32px;
 }
 
 .candle {
+  bottom: 0;
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
   position: fixed;
   right: 0;
-  bottom: 0;
-  width: 50px;
-  height: 50px;
   text-align: center;
-  line-height: 50px;
-  font-size: 30px;
+  width: 50px;
 }
