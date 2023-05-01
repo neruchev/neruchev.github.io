@@ -37,10 +37,12 @@ body {
   max-width: 150px;
 }
 
+.candle,
 .icons a {
   align-items: center;
   background-color: var(--secondary);
   border-radius: 6px;
+  cursor: pointer;
   display: flex;
   height: var(--wrapper-size);
   justify-content: center;
@@ -50,6 +52,7 @@ body {
   width: var(--wrapper-size);
 }
 
+.candle svg,
 .icons a svg {
   fill: var(--primary);
   height: var(--icon-size-1);
@@ -58,6 +61,8 @@ body {
   width: var(--icon-size-1);
 }
 
+.candle:hover svg,
+.candle:focus svg,
 .icons a:hover svg,
 .icons a:focus svg {
   height: var(--icon-size-2);
@@ -65,20 +70,9 @@ body {
 }
 
 .candle {
-  background-color: var(--secondary);
   border-radius: 50%;
   border: none;
   bottom: 25px;
-  cursor: pointer;
-  height: var(--wrapper-size);
   position: fixed;
   right: 25px;
-  text-align: center;
-  transition: background-color var(--animation);
-  width: var(--wrapper-size);
-}
-
-.candle svg {
-  fill: var(--primary);
-  transition: fill var(--animation);
 }
